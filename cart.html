@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" /> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <section id="header">
+        <a href=""><img src="images/logo.png" class="logo" alt="img"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg_bag"><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa fa-times"></i></a>
+            </ul>
+        </div>
+
+        <div id="mobile"> 
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+
+        </div>
+    </section>
+
+    <section id="page_header" class="about_header">
+        <h2>#Cart</h2>
+        <p>Add your coupon & save upto 70% !</p>
+    </section>
+
+
+
+
+    <section id="cart" class="section_p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Image</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                    <!-- <th>Remove</th> -->
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Cart items will be displayed here -->
+            </tbody>
+        </table>
+
+        <section id="cartadd" class="section_p1">
+            <div id="coupon">
+                <h3>Apply Coupon</h3>
+                <div>
+                    <input type="text" placeholder="Enter Your Coupon">
+                    <button>Apply</button>
+                </div>
+            </div>
+            <div id="subtotal">
+                <h3>Cart Totals</h3><br>
+                <table>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td><strong>₹<span id="total">0</span></strong></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <!-- <h3>Total: ₹<span id="total">0</span></h3> -->
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="section_p1">
+      <div class="col">
+        <img class="logo" src="images/logo.png" alt="">
+        <h4>Contact</h4>
+        <p><strong>Address: </strong>Khanapur-Belgaum Road , Belgaum</p>
+        <p><strong>Phone:</strong>+6362627474</p>
+        <p><strong>Timings:</strong>10:00 - 9:00, Mon - sat</p>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+                <i class="fab fa-youtube" aria-hidden="true"></i>
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+            </div>
+        </div>
+      </div> 
+      
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Contact Us</a>
+
+      </div>
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Store</p>
+        <div class="store-images">
+            <img src="images/googlestore.webp" alt="">
+            <img src="images/appstore.jpg" alt="">
+        </div>
+        <p>Secured payment Gateways</p>
+        <div class="payment-images">
+            <img src="images/phonepay.webp" alt="">
+            <img src="images/gpay.webp" alt="">
+            <img src="images/applepay.webp" alt="">
+        </div>
+    </div>
+   
+
+    </footer>
+    <div class="copyright">
+        <p>© 2024 , All Rights Reserved With Owner</p>
+      </div>
+
+    <script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function displayCartItems() {
+            const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+            const cartItemsContainer = document.getElementById('cart-items');
+            let total = 0;
+    
+            cartItemsContainer.innerHTML = '';
+            cartItems.forEach((item, index) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${item.product}</td>
+                    <td><img src="${item.image}" alt="${item.product}" width="50"></td>
+                    <td>₹${item.price}</td>
+                    <td>
+                        <button onclick="updateQuantity(${index}, 'decrement')">-</button>
+                        ${item.quantity}
+                        <button onclick="updateQuantity(${index}, 'increment')">+</button>
+                    </td>
+                    <td>₹${item.price * item.quantity}</td>
+                    <td><button onclick="removeFromCart(${index})">Remove</button></td>
+                `;
+                cartItemsContainer.appendChild(row);
+                total += item.price * item.quantity;
+            });
+    
+            document.getElementById('total').innerText = total;
+        }
+    
+        function removeFromCart(index) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.splice(index, 1);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            displayCartItems();
+        }
+    
+        function updateQuantity(index, action) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            if (action === 'increment') {
+                cart[index].quantity += 1;
+            } else if (action === 'decrement' && cart[index].quantity > 1) {
+                cart[index].quantity -= 1;
+            }
+            localStorage.setItem('cart', JSON.stringify(cart));
+            displayCartItems();
+        }
+    
+        window.onload = displayCartItems;
+    </script>
+    
+    
+
+
+
+
+
+</body>
+</html>

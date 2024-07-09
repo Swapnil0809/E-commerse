@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" /> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <section id="header">
+        <a href=""><img src="images/logo.png" class="logo" alt="img"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg_bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa fa-times"></i></a>
+            </ul>
+        </div>
+
+        <div id="mobile"> 
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+
+        </div>
+    </section>
+
+    <section id="page_header">
+        <h2>#Stayhome</h2>
+        <p>Save more with coupons & upto 70% off</p>
+      
+    </section>
+
+    <section id="product1" class="section_p1">
+    <div class="pro_container">
+        <div class="pro" onclick="window.location.href='sinpro.html';">
+            <img src="images/shop/sp1.jpeg" alt="img">
+            <div class="des">
+                <span>FOXTER</span>
+                <h5>Men Regular Fit Self Design Lapel Collar Casual Shirt</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4> ₹599</h4>
+            </div>
+            <a href="#" onclick="addToCart('Men Regular Fit Self Design Lapel Collar Casual Shirt', 'images/shop/sp1.jpeg', 599)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+        <div class="pro">
+            <img src="images/s1.jpg" alt="img">
+            <div class="des">
+                <span>BRO99</span>
+                <h5>J.VER Mens Cotton Linen Short Sleeve Shirt</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4> ₹799</h4>
+            </div>
+             <a href="#" onclick="addToCart('J.VER Mens Cotton Linen Short Sleeve Shirt', 'images/s1.jpg', 999)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+
+        <div class="pro">
+            <img src="images/shop/sp2.jpeg" alt="img">
+            <div class="des">
+                <span>The Souled Store </span>
+                <h5>Men Boxy Fit Graphic Print Spread Collar Casual Shirt</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4> ₹1299</h4>
+            </div>
+             <a href="#" onclick="addToCart('Men Boxy Fit Graphic Print Spread Collar Casual Shirt', 'images/shop/sp2.jpeg', 1299)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+
+        <div class="pro">
+            <img src="images/shop/sp3.jpeg" alt="img">
+            <div class="des">
+                <span>Lauren Adams </span>
+                <h5>Men Regular Fit Color Block Curved Collar Casual Shirt</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                 
+                </div>
+                <h4> ₹499</h4>
+            </div>
+             <a href="#" onclick="addToCart('Men Regular Fit Color Block Curved Collar Casual Shirt', 'images/shop/sp3.jpeg', 499)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+
+        <div class="pro">
+            <img src="images/shop/sp4.jpeg" alt="img">
+            <div class="des">
+                <span>Lauren Adams</span>
+                <h5>Men Oversized Fit Solid Curved Collar Casual Shirt</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4> ₹499</h4>
+            </div>
+             <a href="#" onclick="addToCart('Men Oversized Fit Solid Curved Collar Casual Shirt', 'images/shop/sp4.jpeg', 499)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+
+        <div class="pro">
+            <img src="images/shop/sp5.jpeg" alt="img">
+            <div class="des">
+                <span>ABBL</span>
+                <h5>Men Colorblock Casual Jacket</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4> ₹649</h4>
+            </div>
+             <a href="#" onclick="addToCart('Men Colorblock Casual Jacket', 'images/shop/sp5.jpeg', 649)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+
+        <div class="pro">
+            <img src="images/shop/sp6.jpeg" alt="img">
+            <div class="des">
+                <span>HRX</span>
+                <h5>Men Printed Bomber Jacket</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4> ₹1499</h4>
+            </div>
+             <a href="#" onclick="addToCart('Men Printed Bomber Jacket', 'images/shop/sp6.jpeg', 1499)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+
+        <div class="pro">
+            <img src="images/shop/sp7.jpeg" alt="img">
+            <div class="des">
+                <span>Chow Chow </span>
+                <h5>Men Solid Round Neck Cotton Blend Black Jacket</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4> ₹749</h4>
+            </div>
+             <a href="#" onclick="addToCart('Men Solid Round Neck Cotton Blend Black Jacket', 'images/shop/sp7.jpeg', 749)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+
+            <div class="pro">
+                <img src="images/shop/sp8.jpeg" alt="img">
+                <div class="des">
+                    <span>HRX</span>
+                    <h5>Men Solid Bomber Jacket</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4> ₹999</h4>
+                </div>
+                <a href="#" onclick="addToCart('Men Solid Bomber Jacket', 'images/shop/sp8.jpeg', 999)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+
+            </div>
+    
+            <div class="pro">
+                <img src="images/shop/sp9.jpeg" alt="img">
+                <div class="des">
+                    <span>Roadster </span>
+                    <h5>Men Washed Jacket</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4> ₹943</h4>
+                </div>
+                 <a href="#" onclick="addToCart('Men Washed Jacket', 'images/shop/sp9.jpeg', 943)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+    
+            <div class="pro">
+                <img src="images/shop/sp10.jpeg" alt="img">
+                <div class="des">
+                    <span>TOMMY HILFIGER </span>
+                    <h5>Men Solid Crew Neck Cotton Blend Jacket</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4> ₹1599</h4>
+                </div>
+                 <a href="#" onclick="addToCart('Men Solid Crew Neck Cotton Blend Jacket', 'images/shop/sp10.jpeg', 1599)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+    
+            <div class="pro">
+                <img src="images/shop/s11.jpeg" alt="img">
+                <div class="des">
+                    <span>Roadster </span>
+                    <h5>Men Washed Jacket</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4> ₹1200</h4>
+                </div>
+                 <a href="#" onclick="addToCart('Men Washed Jacket', 'images/shop/s11.jpeg', 1200)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+    
+            <div class="pro">
+                <img src="images/shop/s12.jpeg" alt="img">
+                <div class="des">
+                    <span>UNITED DENIM </span>
+                    <h5>Men Relaxed Fit Mid Rise Blue Jeans</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4> ₹479</h4>
+                </div>
+                 <a href="#" onclick="addToCart('Men Relaxed Fit Mid Rise Blue Jeans', 'images/shop/s12.jpeg', 479)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+    
+            <div class="pro">
+                <img src="images/shop/s13.jpeg" alt="img">
+                <div class="des">
+                    <span>UNITED DENIM </span>
+                    <h5>Men Relaxed Fit Mid Rise Dark Grey Jeans</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        
+                    </div>
+                    <h4> ₹499</h4>
+                </div>
+                 <a href="#" onclick="addToCart('Men Relaxed Fit Mid Rise Dark Grey Jeans', 'images/shop/s13.jpeg', 499)"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+    
+            <div class="pro">
+                <img src="images/shop/s15.jpeg" alt="img">
+                <div class="des">
+                    <span>UNITED DENIM</span>
+                    <h5>Men Regular Mid Rise Light Blue Jeans</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        
+                    </div>
+                    <h4> ₹659</h4>
+                </div>
+                <a href="#"  onclick="addToCart('Men Regular Mid Rise Light Blue Jeans', 'images/shop/s15.jpeg', 659)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+
+            </div>
+    
+            <div class="pro">
+                <img src="images/shop/s14.jpeg" alt="img">
+                <div class="des">
+                    <span>Urbano Fashion</span>
+                    <h5>Men Regular Mid Rise Grey Jeans</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4> ₹699</h4>
+                </div>
+                 <a href="#"  onclick="addToCart('Men Regular Mid Rise Grey Jeans', 'images/shop/s14.jpeg', 699)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+        </div>
+        </section>
+ 
+    <section id="pagination" class="section_p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+    </section>
+
+    <section id="newsletter" class="section_p1">
+        <div class="newstext">
+            <h4>Sign up for latest news</h4>
+            <p>Get E-Mail updates about our latest <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your Email Here">
+            <button>Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section_p1">
+      <div class="col">
+        <img class="logo" src="images/logo.png" alt="">
+        <h4>Contact</h4>
+        <p><strong>Address: </strong>Khanapur-Belgaum Road , Belgaum</p>
+        <p><strong>Phone:</strong>+6362627474</p>
+        <p><strong>Timings:</strong>10:00 - 9:00, Mon - sat</p>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+                <i class="fab fa-youtube" aria-hidden="true"></i>
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+            </div>
+        </div>
+      </div> 
+      
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Contact Us</a>
+
+      </div>
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Store</p>
+        <div class="store-images">
+            <img src="images/googlestore.webp" alt="">
+            <img src="images/appstore.jpg" alt="">
+        </div>
+        <p>Secured payment Gateways</p>
+        <div class="payment-images">
+            <img src="images/phonepay.webp" alt="">
+            <img src="images/gpay.webp" alt="">
+            <img src="images/applepay.webp" alt="">
+        </div>
+    </div>
+   
+
+    </footer>
+    <div class="copyright">
+        <p>© 2024 , All Rights Reserved With Owner</p>
+      </div>
+
+    <script src="script.js"></script>
+
+
+
+
+
+
+
+    <script>
+       function addToCart(product, image, price) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let existingItemIndex = cart.findIndex(item => item.product === product);
+
+    if (existingItemIndex >= 0) {
+        cart[existingItemIndex].quantity += 1;
+    } else {
+        cart.push({ product, image, price, quantity: 1 });
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+            alert('Product added to cart');
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

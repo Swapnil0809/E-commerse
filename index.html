@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" /> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <section id="header">
+        <a href=""><img src="images/logo.png" class="logo" alt="img"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg_bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa fa-times"></i></a>
+            </ul>
+        </div>
+
+        <div id="mobile"> 
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+
+        </div>
+    </section>
+
+    <section id="hero">
+        <h4>Trade-In-Offer</h4>
+        <h2>Super Value Deals</h2>
+        <h1>On All Products</h1>
+        <p>Save more with coupons & upto 70% off !</p>
+        <button> <a href="shop.html">Shop Now</a> </button>
+    </section>
+
+    <section id="feature" class="section_p1">
+        <div class="fe_box">
+            <img src="images/Free shipping.png" alt="">
+            <h6>Free Delivery</h6>
+        </div>
+
+        <div class="fe_box">
+            <img src="images/Order.png" alt="">
+            <h6>Online Order</h6>
+        </div>
+
+        <div class="fe_box">
+            <img src="images/Money.png" alt="">
+            <h6>Save Money</h6>
+        </div>
+
+        <div class="fe_box">
+            <img src="images/promotion.png" alt="">
+            <h6>Promotions</h6>
+        </div>
+
+        <div class="fe_box">
+            <img src="images/Sell.png" alt="">
+            <h6>Happy Sell</h6>
+        </div>
+        <div class="fe_box">
+            <img src="images/Support.png" alt="">
+            <h6>24/7 Support</h6>
+        </div>
+    </section>
+
+    <section id="product1" class="section_p1">
+    <h2>Featured Products</h2>
+    <p>Summer Collection New Modern Designs</p>
+    <div class="pro_container">
+        <div class="pro">
+            <img src="images/s1.jpg" alt="img">
+            <div class="des">
+                <span>Bro99</span>
+                <h5>J.VER Men's Cotton Linen Short Sleeve Shirt</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4> ₹999</h4>
+            </div>
+            <a href="#" onclick="addToCart('J.VER Mens Cotton Linen Short Sleeve Shirt', 'images/s1.jpeg', 999)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+        <div class="pro">
+            <img src="images/s2.jpg" alt="img">
+            <div class="des">
+                <span>ZEN1FASHION </span>
+                <h5>Men Printed Round Neck Pure Cotton T-Shirt</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4> ₹299</h4>
+            </div>
+             <a href="#" onclick="addToCart('Men Printed Round Neck Pure Cotton T-Shirt', 'images/s2.jpg', 299)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+
+        <div class="pro">
+            <img src="images/s3.jpeg" alt="img">
+            <div class="des">
+                <span>3BROS</span>
+                <h5>Men Self Design Polo Neck Cotton Blend Pink T-Shirt</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4> ₹338</h4>
+            </div>
+             <a href="#"  onclick="addToCart('Men Self Design Polo Neck Cotton Blend Pink T-Shirt', 'images/s3.jpeg', 338)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+
+        <div class="pro">
+            <img src="images/s4.jpeg" alt="img">
+            <div class="des">
+                <span>sti</span>
+                <h5>Men Printed Round Neck Polyester Red T-Shirt</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4> ₹214</h4>
+            </div>
+             <a href="#" onclick="addToCart('Men Printed Round Neck Polyester Red T-Shirt', 'images/s4.jpeg', 214)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+
+        <div class="pro">
+            <img src="images/s5.jpeg" alt="img">
+            <div class="des">
+                <span>The Souled Store </span>
+                <h5>Men Oversized Fit Printed Spread Collar Casual Shirt</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4> ₹999</h4>
+            </div>
+             <a href="#" onclick="addToCart('Men Oversized Fit Printed Spread Collar Casual Shirt', 'images/s5.jpeg', 999)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+
+        <div class="pro">
+            <img src="images/s6.jpeg" alt="img">
+            <div class="des">
+                <span>Palmo</span>
+                <h5>Men Typography Round Neck T-shirt</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                   
+                </div>
+                <h4> ₹299</h4>
+            </div>
+             <a href="#" onclick="addToCart('Men Typography Round Neck T-shirt', 'images/s6.jpeg', 299)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+
+        <div class="pro">
+            <img src="images/s7.jpeg" alt="img">
+            <div class="des">
+                <span>SAMAVARTDESIGNS</span>
+                <h5>Men Regular Fit Printed Casual Shirt</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4> ₹462</h4>
+            </div>
+             <a href="#" onclick="addToCart('Men Regular Fit Printed Casual Shirt', 'images/s7.jpeg', 462)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+
+        <div class="pro">
+            <img src="images/s8.jpeg" alt="img">
+            <div class="des">
+                <span>TIGERSNAKE</span>
+                <h5>Men Regular Fit Printed Spread Collar Casual Shirt</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4> ₹427</h4>
+            </div>
+             <a href="#"  onclick="addToCart('Men Regular Fit Printed Spread Collar Casual Shirt', 'images/s8.jpeg', 427)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+    </div>
+    </section>
+    <section id="banner">
+        <img src="images/banner.jpg" alt="banner">
+    </section>
+
+    <section id="product1" class="section_p1">
+        <h2>New Arrivals</h2>
+        <p>Summer Collection New Modern Designs</p>
+        <div class="pro_container">
+            <div class="pro">
+                <img src="images/s9.jpeg" alt="img">
+                <div class="des">
+                    <span>SO HIGH</span>
+                    <h5>Men Oversized Fit Printed Built-up Collar Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4> ₹399</h4>
+                </div>
+                <a href="#" onclick="addToCart('Men Oversized Fit Printed Built-up Collar Casual Shirt', 'images/s9.jpeg', 399)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+
+            </div>
+    
+            <div class="pro">
+                <img src="images/s10.jpeg" alt="img">
+                <div class="des">
+                    <span>COMBRAIDED</span>
+                    <h5>Men Regular Fit shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4> ₹399</h4>
+                </div>
+                 <a href="#" onclick="addToCart('Men Regular Fit shirt', 'images/s10.jpeg', 399)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+    
+            <div class="pro">
+                <img src="images/s11.jpeg" alt="img">
+                <div class="des">
+                    <span>FOXTER </span>
+                    <h5>Men Regular Fit Printed Spread Collar Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4> ₹719</h4>
+                </div>
+                 <a href="#" onclick="addToCart('Men Regular Fit Printed Spread Collar Casual Shirtt', 'images/s11.jpeg', 719)" ><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+    
+            <div class="pro">
+                <img src="images/s12.jpeg" alt="img">
+                <div class="des">
+                    <span>METRONAUT </span>
+                    <h5>Men Regular Fit Solid Lapel Collar Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                       
+                    </div>
+                    <h4> ₹399</h4>
+                </div>
+                 <a href="#" onclick="addToCart('Men Regular Fit Solid Lapel Collar Casual Shirt', 'images/s12.jpeg', 399)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+    
+            <div class="pro">
+                <img src="images/s14.jpeg" alt="img">
+                <div class="des">
+                    <span>Lyphy</span>
+                    <h5>Men Regular Fit Solid Lapel Collar Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4> ₹475</h4>
+                </div>
+                 <a href="#" onclick="addToCart('Men Regular Fit Solid Lapel Collar Casual Shirt', 'images/s14.jpeg', 475)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+    
+            <div class="pro">
+                <img src="images/s15.jpeg" alt="img">
+                <div class="des">
+                    <span>BodyCare </span>
+                    <h5>Boys Regular Fit Printed Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4> ₹599</h4>
+                </div>
+                 <a href="#" onclick="addToCart('Boys Regular Fit Printed Casual Shirt', 'images/s15.jpeg', 599)"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+    
+            <div class="pro">
+                <img src="images/s16.jpeg" alt="img">
+                <div class="des">
+                    <span>SAMAVARTDESIGNS</span>
+                    <h5>Men Regular Fit Printed Spread Collar Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        
+                    </div>
+                    <h4> ₹462</h4>
+                </div>
+                <a href="#" onclick="addToCart('Men Regular Fit Printed Spread Collar Casual Shirt', 'images/s16.jpeg', 462)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+
+            </div>
+    
+            <div class="pro">
+                <img src="images/s17.jpeg" alt="img">
+                <div class="des">
+                    <span>Deccan Store </span>
+                    <h5>Typography Round Neck Pure Cotton Black T-Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4> ₹419</h4>
+                </div>
+                 <a href="#" onclick="addToCart('Typography Round Neck Pure Cotton Black T-Shirt', 'images/s17.jpeg', 419)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+        </div>
+        </section>
+    
+        <section id="sm_banner" class="section_p1">
+        <div class="banner1">
+            <img src="images/banner1.png" alt="">
+        </div>
+        <div class="banner1">
+            <img src="images/banner2.jpg" alt="">
+        </div>
+    </section>
+ 
+
+    <section id="newsletter" class="section_p1">
+        <div class="newstext">
+            <h4>Sign up for latest news</h4>
+            <p>Get E-Mail updates about our latest <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your Email Here">
+            <button>Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section_p1">
+      <div class="col">
+        <img class="logo" src="images/logo.png" alt="">
+        <h4>Contact</h4>
+        <p><strong>Address: </strong>Khanapur-Belgaum Road , Belgaum</p>
+        <p><strong>Phone:</strong>+6362627474</p>
+        <p><strong>Timings:</strong>10:00 - 9:00, Mon - sat</p>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+                <i class="fab fa-youtube" aria-hidden="true"></i>
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+            </div>
+        </div>
+      </div> 
+      
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Contact Us</a>
+
+      </div>
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Store</p>
+        <div class="store-images">
+            <img src="images/googlestore.webp" alt="">
+            <img src="images/appstore.jpg" alt="">
+        </div>
+        <p>Secured payment Gateways</p>
+        <div class="payment-images">
+            <img src="images/phonepay.webp" alt="">
+            <img src="images/gpay.webp" alt="">
+            <img src="images/applepay.webp" alt="">
+        </div>
+    </div>
+   
+
+    </footer>
+    <div class="copyright">
+        <p>© 2024 , All Rights Reserved With Owner</p>
+      </div>
+
+    <script src="script.js"></script>
+
+    <script>
+               function addToCart(product, image, price) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let existingItemIndex = cart.findIndex(item => item.product === product);
+
+    if (existingItemIndex >= 0) {
+        cart[existingItemIndex].quantity += 1;
+    } else {
+        cart.push({ product, image, price, quantity: 1 });
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+            alert('Product added to cart');
+        }
+    </script>
+</body>
+</html>

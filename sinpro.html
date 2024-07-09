@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" /> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <section id="header">
+        <a href=""><img src="images/logo.png" class="logo" alt="img"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg_bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa fa-times"></i></a>
+            </ul>
+        </div>
+
+        <div id="mobile"> 
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+
+        </div>
+    </section>
+
+    <section id="prodetails" class="section_p1">
+        <div class=" single_pro_img">
+            <img src="images/shop/sp1.jpeg" width="100%" id="mainimg" alt="img">
+            <div class="small_img_group">
+                <div class="small_img_col">
+                    <img src="images/sinproduct/ss1.jpeg" width="100%" class="small_img" alt="img">
+                </div>
+                <div class="small_img_col">
+                    <img src="images/sinproduct/ss2.jpeg" width="100%" class="small_img" alt="img">
+                </div>
+                <div class="small_img_col">
+                    <img src="images/sinproduct/ss3.jpeg" width="100%" class="small_img" alt="img">
+                </div>
+                <div class="small_img_col">
+                    <img src="images/sinproduct/ss4.jpeg" width="100%" class="small_img" alt="img">
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="single_pro_details">
+                <h6>Home / T Shirts</h6>
+                <h2>₹999</h2>
+                <select>
+                    <option>Select Size</option>
+                    <option>Small</option>
+                    <option>Large</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                </select>
+                <input type="number" value="1">
+                <button class="normal">Add To Cart</button>
+                <h4>Product Details</h4>
+                <span>Pack of:   1 <br>
+                    Style Code:  SHIRT-161 <br>
+                    Closure:     Button <br>
+                    Fit:         Regular <br>
+                    Fabric:      Polycotton <br>
+                    Sleeve:      Half Sleeve <br>
+                    Pattern:     Self Design <br>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section id="product1" class="section_p1">
+        <h2>Featured Products</h2>
+        <p>Summer Collection New Modern Designs</p>
+        <div class="pro_container">
+            <div class="pro">
+                <img src="images/sinproduct/ss7.jpeg" alt="img">
+                <div class="des">
+                    <span>FLEPZIQ</span>
+                    <h5>Men Self Design Hooded Neck T-shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4> ₹337</h4>
+                </div>
+                <a href="#" onclick="addToCart('Men Self Design Hooded Neck T-shirt', 'images/sinproduct/ss7.jpeg', 337)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+
+            </div>
+    
+            <div class="pro">
+                <img src="images/sinproduct/ss5.jpeg" alt="img">
+                <div class="des">
+                    <span>FLEPZIQ </span>
+                    <h5>Men Solid Round Neck Cotton Blend Light Green T-Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4> ₹299</h4>
+                </div>
+                 <a href="#" onclick="addToCart('Men Solid Round Neck Cotton Blend Light Green T-Shirt', 'images/sinproduct/ss5.jpeg', 299)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+    
+            <div class="pro">
+                <img src="images/sinproduct/ss6.jpeg" alt="img">
+                <div class="des">
+                    <span>Manly Tees </span>
+                    <h5>Men Printed Round Neck Cotton Blend Green T-Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4> ₹375</h4>
+                </div>
+                 <a href="#" onclick="addToCart('Men Printed Round Neck Cotton Blend Green T-Shirt', 'images/sinproduct/ss6.jpeg', 375)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+    
+            <div class="pro">
+                <img src="images/sinproduct/ss8.jpeg" alt="img">
+                <div class="des">
+                    <span>clickwell</span>
+                    <h5>Men Printed Round Neck Cotton Blend Purple T-Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4> ₹260</h4>
+                </div>
+                 <a href="#" onclick="addToCart('Men Printed Round Neck Cotton Blend Purple T-Shirt', 'images/sinproduct/ss8.jpeg', 260)"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+        </div>
+        </section>
+
+    <section id="newsletter" class="section_p1">
+        <div class="newstext">
+            <h4>Sign up for latest news</h4>
+            <p>Get E-Mail updates about our latest <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your Email Here">
+            <button>Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section_p1">
+      <div class="col">
+        <img class="logo" src="images/logo.png" alt="">
+        <h4>Contact</h4>
+        <p><strong>Address: </strong>Khanapur-Belgaum Road , Belgaum</p>
+        <p><strong>Phone:</strong>+6362627474</p>
+        <p><strong>Timings:</strong>10:00 - 9:00, Mon - sat</p>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+                <i class="fab fa-youtube" aria-hidden="true"></i>
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+            </div>
+        </div>
+      </div> 
+      
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Contact Us</a>
+
+      </div>
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Store</p>
+        <div class="store-images">
+            <img src="images/googlestore.webp" alt="">
+            <img src="images/appstore.jpg" alt="">
+        </div>
+        <p>Secured payment Gateways</p>
+        <div class="payment-images">
+            <img src="images/phonepay.webp" alt="">
+            <img src="images/gpay.webp" alt="">
+            <img src="images/applepay.webp" alt="">
+        </div>
+    </div>
+   
+
+    </footer>
+    <div class="copyright">
+        <p>© 2024 , All Rights Reserved With Owner</p>
+      </div>
+
+      <script>
+        var mainimg = document.getElementById("mainimg");
+        var smallimg = document.getElementsByClassName("small_img");
+
+        for (var i = 0; i < smallimg.length; i++) {
+            smallimg[i].onclick = function() {
+                mainimg.src = this.src;
+            };
+        }
+
+
+        function addToCart(product, image, price) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let existingItemIndex = cart.findIndex(item => item.product === product);
+
+    if (existingItemIndex >= 0) {
+        cart[existingItemIndex].quantity += 1;
+    } else {
+        cart.push({ product, image, price, quantity: 1 });
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+            alert('Product added to cart');
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
