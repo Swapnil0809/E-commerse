@@ -827,9 +827,15 @@ footer .follow i{
     #banner img{
         height: 220px;
     }
-    #sm_banner {
+    /* #sm_banner {
         height: auto;
         min-width: 100%;
+    } */
+    #sm_banner .banner1 img {
+        /* height: 250px; */
+        padding: 20px;
+        width: 100%;
+        
     }
     #newsletter .form{
         width: 70%;
@@ -867,9 +873,18 @@ footer .follow i{
     #banner img{
         height: auto;
     }
-    /* #sm_banner .banner1{
-
-    } */
+    #sm_banner {
+        display: flex;
+        flex-wrap: wrap;
+        width:50%;
+        padding: 0;
+        margin: 0;
+    }
+    #sm_banner .banner1 img {
+        /* height: 450px */
+        width: 250px;
+        
+    }
     newsletter{
         padding: 40px 20px;
     }
