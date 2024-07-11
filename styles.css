@@ -146,10 +146,14 @@ body{
     color: #088178;
     border: 0;
     padding: 14px 80px 14px 65px;
-    border-radius: 50px;
+    border-radius: 30px;
     cursor: pointer;
     font-weight: 700;
     font-size: 15px;
+}
+#hero button a{
+    text-decoration: none;
+    color: #088178;
 }
 #feature img{
     height: 160px;
@@ -800,7 +804,7 @@ footer .follow i{
 
     #hero {
         height: 90vh;
-        padding: 0px 80px;
+        padding: 0px 10px;
         background-position:top 30% right 70% ;
     }
     
@@ -811,6 +815,7 @@ footer .follow i{
         margin: 15px 15px;
     }
     
+
     #product1 .pro_container{
         justify-content: center;
     
@@ -837,8 +842,182 @@ footer .follow i{
         width: 100%;
         
     }
+
+        /* single product */
+        #prodetails{
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+    
+        }
+        #prodetails .sinle_pro_image{
+            width: 100%;
+            /* margin-right: 0px; */
+        }
+        #prodetails .single_pro_details{
+            /* width: 100%; */
+            /* text-align: justify; */
+            text-align: justify;
+            padding: 0;
+            margin-left: 15px;
+        }
+        #product1 h2{
+            font-size: 35px;
+        }
+
+        /* about */
+
+        #about_head{
+            flex-direction: column;
+    
+        }
+        #about_head img{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        #about_head div{
+            padding: 0px; 
+            
+        }
+        #about_app .video{
+            width: 100%;
+        }
+
+
+        #about_head h2 {
+            font-size: 40px;
+            text-align: center;
+        }
+        /* contact */
+        #contact_details{
+            display: flex;
+            flex-direction: column;
+        }
+        #contact_details .details{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        #contact_details .map{
+            width: 100%;
+        }
+        #form_details{
+            margin: 10px;
+            padding: 30px 10px;
+            flex-wrap: wrap;
+        }
+        #form_details form{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        /* cart page */
+ /* cart page */
+ #cart table {
+    width: 100%;
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: block;
+}
+
+#cart table tbody tr {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    flex-wrap: wrap;
+    border: 1px solid #e2e9e1;
+    margin-bottom: 40px;
+    /* padding: 40px; */
+    /* box-sizing: border-box;  */
+    /* justify-content:center; */
+}
+
+#cart table td {
+    display: block;
+    width: 100%;
+    padding: 0;
+    /* text-align: justify; */
+    /* padding: 10px 30px; */
+    /* border-bottom: none; */
+    /* box-sizing: border-box; */
+    word-wrap: break-word; 
+        }
+        #cart table td:nth-child(1) {
+            width: 150px;
+            text-align: justify;
+        }
+
+/* Aligning content in a column with labels */
+#cart table td:nth-child(1) {
+   margin-right: auto;
+   font-size: 12px;
+   /* padding: 20px; */
+}
+#cart table td{
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+}
+#cart table td img{
+    height: 90px;
+    width: 90px;
+    justify-content: center;
+}
+
+/* #cart table td:nth-child(2)::before {
+    content: "Image: ";
+    font-weight: bold;
+} */
+
+#cart table td:nth-child(3)::before {
+    content: "Price: ";
+    font-weight: bold;
+}
+
+/* #cart table td:nth-child(4)::before {
+    content: "Quantity: ";
+    font-weight: bold;
+} */
+
+#cart table td:nth-child(5)::before {
+    content: "Subtotal: ";
+    font-weight: bold;
+}
+
+/* #cart table td:nth-child(6)::before {
+    content: "Remove: ";
+    font-weight: bold;
+} */
+#cart table th{
+    display: none;
+}
+#cartadd {
+    flex-direction: column;
+    align-items: center;
+} 
+
+#coupon,
+#subtotal {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#coupon input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#subtotal table tr td {
+    padding: 20px;
+    font-size: 16px;
+}
+    
+       
+
     #newsletter .form{
-        width: 70%;
+        width: 100%;
+    }
+    #newsletter button {
+        width: 30%;
     }
 }
 
